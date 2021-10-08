@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!-- LOAD THE JQUERY -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- LOAD THE BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LOAD THE FULLPAGE -->
+    <script src="js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <!-- LOAD THE USER DEFINED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <a class="navbar-brand" href="#section1">
+            <img src="img/trulogo.png" alt="Logo" style="width:40px;">
+            THEPSATRI RAJABHAT UNIVERSITY</a>
+        <ul class="navbar-nav" id="menu">
+            <li class="nav-item" data-menuanchor="section1">
+                <a class="nav-link" href="#section1" >Home</a>
+            </li>
+            <li class="nav-item dropdown" data-menuanchor="section2">
+                    <a class="nav-link dropdown-toggle" href="#section2" id="navbardrop" data-toggle="dropdown">
+                      Educations
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Science and Technology</a>
+                      <a class="dropdown-item" href="#">Management Science</a>
+                      <a class="dropdown-item" href="#">Education</a>
+                      <a class="dropdown-item" href="#">Humanities and Social sciences</a>
+                      <a class="dropdown-item" href="#">Information Technology</a>
+                      <a class="dropdown-item" href="#">Industrial Technology</a>
+                      <a class="dropdown-item" href="#">Management Science</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown" data-menuanchor="section3">
+                        <a class="nav-link dropdown-toggle" href="#section3" id="navbardrop" data-toggle="dropdown">
+                          Officess
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">President's office</a>
+                          <a class="dropdown-item" href="#">Art and Culture Center</a>
+                          <a class="dropdown-item" href="#">Academic Resource and Information technolgy</a>
+                          <a class="dropdown-item" href="#">Research and Development Institute </a>
+                          <a class="dropdown-item" href="#">Computer & Language Center </a>
+                          <a class="dropdown-item" href="#">Science Center </a>
+                          <a class="dropdown-item" href="#">Thep Thani Professional Internship Center</a>
+                          <a class="dropdown-item" href="#">Educational Innovation & Technology Center </a>
+                          <a class="dropdown-item" href="#">The Demonstration School of  Thepsatri Rajabhat University</a>
+
+                         
+                        </div>
+                      </li>
+            <li class="nav-item" data-menuanchor="section4">
+                <a class="nav-link" href="#section4">About</a>
+            </li>
+            <li class="nav-item" data-menuanchor="section5">
+                <a class="nav-link" href="#section5">Contact</a>
+            </li>
+        </ul>
+        <div id="right">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-4" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- <div id="navbar"></div> -->
+    <div id="wrapper">
+        <div class="section section1" id="section1">
+            <h1>Section</h1> 
+            <p>hublahubla</p>
+        </div>
+
+        <!-- FACULTIES SLIDES -->
+        <div class="section slide" id="section3" style="" >
+            <div class="slide">
+                <h1>Faculty of Education</h1>
+            </div>
+            <div class="slide">
+                <h1>Faculty of Humanities and Social Sciences</h1>
+            </div>
+            <div class="slide">
+                <h1>Faculty of Science and Technology </h1>
+            </div>
+            <div class="slide">
+                <h1>Faculty of Management Sciences</h1>
+            </div>
+            <div class="slide">
+                <h1>Faculty of Information Technology </h1>
+            </div>
+            <div class="slide">
+                <h1>Faculty of Industrial Technology </h1>
+            </div>
+
+        </div>
+
+        <!-- OFFICES SLIDES -->
+        <div class="section slide" id="section3" >
+            <div class="slide">
+                <h1>President Office</h1>
+            </div>
+            <div class="slide">
+                <h1>Academic Resource and Information technolgy</h1>
+            </div>
+            <div class="slide">
+                <h1>Research and Development Institute.</h1>
+            </div>
+        </div>
+
+        <div class="section section1" id="section5">
+                <h1>Last Section</h1> 
+                <p>hublahubla</p>
+        </div>
+        footer : 
+        About TRU
+
+        History
+        Vision and Mission
+        The Board of Executive 
+        Mission Support
+
+        Visit TRU
+        Campus Map
+
+
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#wrapper').fullpage({
+            
+            anchors: ['section1', 'section2', 'section3'],
+            autoScrolling:true,
+		    scrollHorizontally: true,
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        });
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+</script>
+
+</html>

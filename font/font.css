@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'RHINO SANS PERSONAL USE';
+  src: url('RHINO SANS PERSONAL USE.eot');
+  src: url('RHINO SANS PERSONAL USE.eot?#iefix') format('embedded-opentype'),
+       url('RHINO SANS PERSONAL USE.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RhinoSans';
+  src: url('RhinoSans.svg#RhinoSans') format('svg'),
+       url('RhinoSans.ttf') format('truetype'),
+       url('RhinoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
